@@ -32,9 +32,9 @@ This project aims to recognize hand gestures in real-time and associate them wit
    ```bash
    pip install -r requirements.txt
 
-##Usage 
+## Usage 
 
-#Data Collection:
+# Data Collection:
 
 Run the data collection script to gather images for training:
 
@@ -42,7 +42,7 @@ Run the data collection script to gather images for training:
    python data_collection.py
    ```
 
-#Model Training:
+# Model Training:
 
 Execute the model training script:
    ```bash
@@ -50,7 +50,7 @@ Execute the model training script:
    ```
 The trained model will be saved as hand_gesture_model.keras.
 
-#Real-Time Detection:
+# Real-Time Detection:
 
 Run the real-time detection script to identify hand gestures using your webcam:
    ```bash
@@ -59,18 +59,18 @@ Run the real-time detection script to identify hand gestures using your webcam:
    
 The trained model will be used to perform real-time hand gesture detection.
 
-##File Structure
+## File Structure
 data_collection.py: Script for collecting hand gesture images.
 model_training.py: Script for training the machine learning model.
 real_time_detection.py: Script for real-time hand gesture detection.
 
-##Data Collection and Model Training
+## Data Collection and Model Training
 The data_collection.py script captures hand gestures and saves images to train the model. The model_training.py script loads and preprocesses the collected data, trains a convolutional neural network (CNN), and saves the trained model.
 
-##Real-Time Detection
+## Real-Time Detection
 The real_time_detection.py script utilizes the trained model to perform real-time hand gesture detection using your webcam.
 
-##VLC Media Player Control
+## VLC Media Player Control
 The hand gestures correspond to VLC media player controls:
 
 Play/Pause: Spacebar
@@ -80,10 +80,10 @@ Forward: Right Arrow
 Backward: Left Arrow
 
 
-##Demo
+## Demo
 
 
-##Future Improvements
+## Future Improvements
 Implement a more robust hand tracking algorithm.
 Expand the gesture set for additional controls.
 Feel free to contribute and improve this project!
