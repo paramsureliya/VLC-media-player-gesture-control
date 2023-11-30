@@ -91,6 +91,9 @@ The hand gestures correspond to VLC media player controls:
   <br>
   <img src="https://github.com/paramsureliya/VLC-media-player-gesture-control/blob/main/mesh_diagram.png" alt="Mesh Diagram" width="400" height="300">
 </div>
+   <img src="https://github.com/paramsureliya/VLC-media-player-gesture-control/blob/main/volume_up.png" alt="Mesh Diagram" width="400" height="300">
+</div>
+
 
 
 
