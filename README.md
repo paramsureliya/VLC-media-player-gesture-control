@@ -80,11 +80,7 @@ The hand gestures correspond to VLC media player controls:
 5. Backward: Left Arrow
 
 
-## Demo
-
-# Predictions
-
-## Demo
+## Predictions Photo
 
 <div align="center">
   <img src="https://github.com/paramsureliya/VLC-media-player-gesture-control/blob/main/play_pause.png" alt="Play/Pause" width="400" height="300">
@@ -93,9 +89,6 @@ The hand gestures correspond to VLC media player controls:
   <br>
    <img src="https://github.com/paramsureliya/VLC-media-player-gesture-control/blob/main/volume_up.png" alt="volume_up" width="400" height="300">
 </div>
-
-
-
 
 
 ## Future Improvements
