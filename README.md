@@ -84,6 +84,14 @@ The hand gestures correspond to VLC media player controls:
 
 # Predictions
 
+## Demo
+
+<div align="center">
+  <img src="https://github.com/paramsureliya/VLC-media-player-gesture-control/blob/main/assets/148708744/d3cd58f0-640e-4121-8b79-71db1f400814.png" alt="Mesh Diagram" width="400" height="300">
+  <img src="https://github.com/paramsureliya/VLC-media-player-gesture-control/blob/main/assets/148708744/c2233e79-2018-4b19-9bef-7860b8fd6295.png" alt="Play/Pause" width="400" height="300">
+</div>
+
+
 <div align="center">
   <img src="![play_pause](https://github.com/paramsureliya/VLC-media-player-gesture-control/assets/148708744/c2233e79-2018-4b19-9bef-7860b8fd6295)" alt="Image 1" width="400" height="300">
   <img src="![mesh_diagram](https://github.com/paramsureliya/VLC-media-player-gesture-control/assets/148708744/d3cd58f0-640e-4121-8b79-71db1f400814)" alt="Image 2" width="400" height="300">
