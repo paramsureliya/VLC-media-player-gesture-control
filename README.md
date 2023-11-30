@@ -17,7 +17,7 @@ This project aims to recognize hand gestures in real-time and associate them wit
 4. [Data Collection and Model Training](#data-collection-and-model-training)
 5. [Real-Time Detection](#real-time-detection)
 6. [VLC Media Player Control](#vlc-media-player-control)
-7. [Demo](#demo)
+7. [Predictions Photo](#Predictions-Photo)
 8. [Future Improvements](#future-improvements)
 
 ## Installation
