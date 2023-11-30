@@ -73,11 +73,11 @@ The real_time_detection.py script utilizes the trained model to perform real-tim
 ## VLC Media Player Control
 The hand gestures correspond to VLC media player controls:
 
-Play/Pause: Spacebar
-Volume Up: Ctrl + Up Arrow
-Volume Down: Ctrl + Down Arrow
-Forward: Right Arrow
-Backward: Left Arrow
+1. Play/Pause: Spacebar
+2. Volume Up: Ctrl + Up Arrow
+3. Volume Down: Ctrl + Down Arrow
+4. Forward: Right Arrow
+5. Backward: Left Arrow
 
 
 ## Demo
