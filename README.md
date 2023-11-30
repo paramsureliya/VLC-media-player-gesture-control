@@ -84,9 +84,9 @@ The hand gestures correspond to VLC media player controls:
 
 
 ## Future Improvements
-Implement a more robust hand tracking algorithm.
-Expand the gesture set for additional controls.
-Feel free to contribute and improve this project!
+.Implement a more robust hand tracking algorithm.
+.Expand the gesture set for additional controls.
+.Feel free to contribute and improve this project!
 
 
 
