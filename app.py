@@ -2,10 +2,16 @@ from flask import Flask, request, jsonify
 import numpy as np
 import cv2
 from tensorflow.keras.models import load_model
+import base64
+from flask import request
+from io import BytesIO
+import os
+print("Current working directory:", os.getcwd())
 
 app = Flask(__name__)
-model = load_model('hand_gesture_model.keras')
+model = load_model('hand_gesture_model1.h5')
 class_labels = ['play_pause','volume_up', 'volume_down', 'forward', 'backward']
+
 
 def preprocess_image(image_bytes):
     # Decode image bytes to numpy array
@@ -37,16 +43,32 @@ def preprocess_image(image_bytes):
     return imgwhite
 
 @app.route('/predict', methods=['POST'])
-def predict():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file uploaded'}), 400
+# def predict():
+#     if 'file' not in request.files:
+#         return jsonify({'error': 'No file uploaded'}), 400
     
-    file = request.files['file']
-    img_bytes = file.read()
+#     file = request.files['file']
+#     img_bytes = file.read()
+#     processed_img = preprocess_image(img_bytes)
+#     predictions = model.predict(processed_img)
+#     predicted_class = class_labels[np.argmax(predictions)]
+    
+#     return jsonify({'gesture': predicted_class})
+
+def predict():
+    if request.is_json:
+        data = request.get_json()
+        if data.get('isBase64Encoded'):
+            img_bytes = base64.b64decode(data['body'])
+        else:
+            return jsonify({'error': 'Expected base64-encoded image'}), 400
+    else:
+        return jsonify({'error': 'Invalid request format'}), 400
+
     processed_img = preprocess_image(img_bytes)
     predictions = model.predict(processed_img)
     predicted_class = class_labels[np.argmax(predictions)]
-    
+
     return jsonify({'gesture': predicted_class})
 
 if __name__ == "__main__":
