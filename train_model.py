@@ -66,5 +66,7 @@ epochs = 8
 model.fit(X_train, y_train_one_hot, validation_data=(X_test, y_test_one_hot), epochs=epochs, batch_size=batch_size)
 
 # Save the model
-model.save('hand_gesture_model.keras')
+model.save("hand_gesture_model1.h5")
+
+#model.save('hand_gesture_model.keras')
 

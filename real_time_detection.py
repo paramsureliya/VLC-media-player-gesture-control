@@ -6,6 +6,10 @@ import time
 from tensorflow.keras.models import load_model
 import pyautogui
 
+import tensorflow as tf
+print(tf.__version__)
+
+
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
 offset =20
@@ -35,7 +39,7 @@ def backward():
     time.sleep(1)  # Introduce a 1-second delay
 
 # Load the trained model
-model = load_model('hand_gesture_model.keras')
+model = load_model('hand_gesture_model1.h5')
 
 # Real-time detection using webcam
 cap = cv2.VideoCapture(0)
