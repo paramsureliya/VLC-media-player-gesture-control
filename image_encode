@@ -1,0 +1,38 @@
+import cv2
+import base64
+import requests
+import time
+
+url = "http://localhost:8000/predict"
+
+cap = cv2.VideoCapture(0)
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    # Encode frame as JPG
+    _, buffer = cv2.imencode('.jpg', frame)
+    jpg_as_text = base64.b64encode(buffer).decode('utf-8')
+
+    data = {
+        "isBase64Encoded": True,
+        "body": jpg_as_text
+    }
+
+    response = requests.post(url, json=data)
+    if response.ok:
+        gesture = response.json().get('gesture')
+        print("Predicted gesture:", gesture)
+    else:
+        print("Request failed:", response.status_code)
+
+    cv2.imshow('Webcam', frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+    time.sleep(1)  # avoid spamming server too fast
+
+cap.release()
+cv2.destroyAllWindows()
