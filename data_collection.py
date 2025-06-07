@@ -3,6 +3,7 @@ from cvzone.HandTrackingModule import HandDetector
 import numpy as np
 import math
 import time
+import pandas as pd
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
